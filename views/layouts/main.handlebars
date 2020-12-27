@@ -14,21 +14,22 @@
       <h1>
         <a href="/">THE Tech Blog</a>
       </h1>
-      <nav>
-        {{#if loggedIn}}
-        <a href="/dashboard">dashboard</a>
-        <button id="logout" class="btn-no-style">logout</button>
-        {{else}}
-        <a href="/login">Get Started</a>
-        {{/if}}
-      </nav>
+    <nav class = "navbar">
+      <ul>
+        <li class = "li-inline nav-item"><a href ="/">home</a></li>
+                <li class = "li-inline nav-item"><a href ="/dashboard">Dashboard</a></li>
+                  <li class = "li-inline nav-item"><a href ="/login">login</a></li>
+                        <li class = "li-inline nav-item"><a href ="#" id = "logout-link">SEE YA!</a></li>
+      </ul>
+    </nav>
     </header>
-    <main>
-      {{{ body }}}
-    </main>
-    <footer>
-      Desire Leads To A Destination!
-    </footer>
+  <main class="col-auto">
+    {{{body}}}
+  </main>
+
+  <footer class="flex-row justify-center">
+    ⌛DESIRE LEADS TO DESTINATION!
+  </footer>
   </div>
   
   {{#if loggedIn}}
