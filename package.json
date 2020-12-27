@@ -1,0 +1,23 @@
+{
+  "name": "Tech-Blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "YUHH.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/J-sanchez/Tech-Blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/J-sanchez/Tech-Blog/issues"
+  },
+  "homepage": "https://github.com/J-sanchez/Tech-Blog#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
