@@ -9,19 +9,18 @@
 </head>
 
 <body>
-  <div class="wrapper">
+<div class="wrapper">
     <header>
       <h1>
-        <a href="/">THE Tech Blog</a>
+        <a href="/" class="myHeader">Tech Blog</a>
       </h1>
-    <nav class = "navbar">
-      <ul>
-        <li class = "li-inline nav-item"><a href ="/">home</a></li>
-                <li class = "li-inline nav-item"><a href ="/dashboard">Dashboard</a></li>
-                  <li class = "li-inline nav-item"><a href ="/login">login</a></li>
-                        <li class = "li-inline nav-item"><a href ="#" id = "logout-link">SEE YA!</a></li>
-      </ul>
-    </nav>
+        <ul id="navbar">
+          <li><a href="/">Home</a></li>
+          <li><a href="/dashboard">Dashboard</a></li>
+          <li><a href="/login">Login or Sign Up</a></li>
+          <li><a href="#" id="logout-link">SEE YA!</a></li>
+        </ul>
+      </nav>
     </header>
   <main class="col-auto">
     {{{body}}}
@@ -31,10 +30,11 @@
     ⌛DESIRE LEADS TO DESTINATION!
   </footer>
   </div>
-  
+{{!--   
   {{#if loggedIn}}
-  <script src="/javascript/logout.js"></script>
-  {{/if}}
+  <script src="/public/javascript/logout.js"></script>
+  {{/if}} --}}
 </body>
 
 </html>
+  <script src="/javascript/logout.js"></script>
