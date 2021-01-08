@@ -16,8 +16,14 @@ const commentFormHandler = async function(event) {
         }
       });
   
-      document.location.reload();
+      if (response.ok) {
+        document.location.reload();
+
+    } else {
+        alert(response.statusText);
+        document.querySelector('#comment-form').style.display = "block";
     }
+}
 };
-  
+
 document.querySelector('#new-comment-form').addEventListener('submit', commentFormHandler);
