@@ -1,40 +1,45 @@
+  
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>THE Tech Blog</title>
-  <link rel="stylesheet" href="/style/skeleton.css">
+  <title>Tech Blog</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+
+       
 </head>
 
 <body>
-<div class="wrapper">
-    <header>
-      <h1>
-        <a href="/" class="myHeader">Tech Blog</a>
-      </h1>
-        <ul id="navbar">
-          <li><a href="/">Home</a></li>
-          <li><a href="/dashboard">Dashboard</a></li>
-          <li><a href="/login">Login or Sign Up</a></li>
-          <li><a href="#" id="logout-link">SEE YA!</a></li>
-        </ul>
-      </nav>
-    </header>
-  <main class="col-auto">
-    {{{body}}}
-  </main>
-
-  <footer class="flex-row justify-center">
-    ⌛DESIRE LEADS TO DESTINATION!
-  </footer>
+  <div class="top-bar">
+    <div class="top-bar-left">
+       <ul class="menu">
+        {{#if loggedIn}}
+            <a class="menu-text" href="/">Home</a>
+            <a href="/dashboard">Dashboard</a>
+            <a><button id="logout" class="btn-no-style">Logout</button></a>
+        {{else}}
+            <a href="/login">Login</a>
+        {{/if}}
+    </ul>
+    </div>
+    <div class="top-bar-title">
+        Tech Blog
+    </div>
   </div>
-{{!--   
-  {{#if loggedIn}}
-  <script src="/public/javascript/logout.js"></script>
-  {{/if}} --}}
+    <main>
+      {{{ body }}}
+    </main>
+    <footer>
+      The latest tech information with the freshest perspectives!
+    </footer>
+  </div>
+
+{{#if loggedIn}}
+<script src="/javascript/logout.js"></script>
+{{/if}}
+
 </body>
 
 </html>
-  <script src="/javascript/logout.js"></script>
